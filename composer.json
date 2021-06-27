@@ -1,0 +1,31 @@
+{
+    "name": "wobeto/geolocation-distance",
+    "description": "A package to determine the distance between two geolocations by latitude and longitude",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fernando Wobeto",
+            "email": "fernandowobeto@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wobeto\\GeolocationDistance\\": "Wobeto/GeolocationDistance"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wobeto\\GeolocationDistance\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+        "test": "@php vendor/bin/phpunit tests/ --bootstrap vendor/autoload.php"
+    }
+}
